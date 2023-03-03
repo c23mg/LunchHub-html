@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My API Page</title>
+  </head>
+  <body>
+    <h1>Today's Lunch</h1>
+    <script src="api.js"></script>
+
+    <div id="website-container">
+        <!-- <iframe src="https://daltonschool.flikisdining.com/menu/dalton-school/lunch/2023-02-24" width="1000" height="1000"></iframe> -->
+    </div>
+    <div id="api-data"></div>
+
+    
+    <div id="menu"></div>
+    <script>
+      fetch('https://daltonschool.flikisdining.com/menu/api/weeks/school/dalton-school/menu-type/lunch/2023/02/24/?format=api')
+        .then(response => response.json())
+        .then(data => {
+          let menu = document.getElementById('menu');
+          let items = data.menu_items;
+          let html = '';
+          items.forEach(item => {
+            html += `<p>${item.name}</p>`;
+          });
+          menu.innerHTML = html;
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    </script>
+
+  </body>
+</html>
