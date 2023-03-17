@@ -1,4 +1,4 @@
-/* CSS styling for the Live Stream website */
+/* CSS styling for the Lunch Hub website */
 
 /* Global styles */
 body {
@@ -37,30 +37,32 @@ body {
 }
 
 /* Main content styles */
-h2 {
+h1 {
   text-align: center;
   margin-top: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-decoration: underline;
-  color: whitesmoke;
-  color: #343541;
+}
 
+#website-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
 iframe {
-  display: block;
-  margin: 0 auto;
   width: 100%;
-  max-width: 560px;
-  height: 315px;
+  height: 600px;
+  border: none;
+}
+
+#api-data {
+  text-align: center;
   margin-top: 30px;
 }
 
-/* Footer styles */
-footer {
-  background-color: whitesmoke;
-  padding: 10px;
-  text-align: center;
+#menu p {
+  font-size: 18px;
+  margin: 10px 0;
 }
 
 .tab {

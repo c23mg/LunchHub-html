@@ -1,0 +1,89 @@
+/* General styles */
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 3rem;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input[type="radio"] {
+  display: inline-block;
+  margin: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #343541;
+  border-radius: 50%;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="radio"]:checked {
+  background-color: #343541;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 30px auto;
+  background-color: #343541;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#form-submitted-message {
+color: green;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button[type="submit"]:hover {
+  background-color: #343541;
+}
+
+/* Navigation styles */
+
+.topnav {
+  background-color: #343541;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.logo {
+  font-size: 1.5rem;
+}
+
+.topnav a:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: whitesmoke;
+}

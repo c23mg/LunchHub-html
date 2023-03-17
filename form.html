@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="form.css">
+      <div class="topnav">
+        <a class = "logo" href="#lunchhub">Lunch Hub</a>
+        <a class="active" href="/index.html">Home</a>
+        <a href="./form.html">Vote</a>
+        <a href="./lunch.html">Lunch</a>
+	</div>
 	<title>Vote on Next Week's lunch!</title>
 </head>
 <body>
@@ -11,5 +18,20 @@
 		<input type="radio" name="lunch" value="Pizza">Pizza<br>
 		<button type="submit">Submit</button>
 	</form>
+
+	<div id="form-submitted-message" style="display:none;">
+		<p>Form submitted successfully!</p>
+	  </div>
+
+	  <script>
+		const form = document.querySelector('form');
+		const message = document.querySelector('#form-submitted-message');
+  
+		form.addEventListener('submit', (event) => {
+		  event.preventDefault(); 
+		  message.style.display = 'block'; 
+		  form.reset(); 
+		});
+	  </script>
 </body>
 </html>
